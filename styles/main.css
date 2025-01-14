@@ -25,3 +25,6 @@ body {
   background-color: rgb(97, 172, 97);
   text-align: center;
 }
+h1 {
+  font-size: 5vw;
+}
