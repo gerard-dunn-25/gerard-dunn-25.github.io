@@ -1,0 +1,22 @@
+.silkscreen-regular {
+  font-family: 'Silkscreen', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.zain-regular {
+  font-family: 'Zain', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: 'Zain', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-regular-italic {
+  font-family: 'Zain', serif;
+  font-weight: 400;
+  font-style: italic;
+}
