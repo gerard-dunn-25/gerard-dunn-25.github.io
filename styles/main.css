@@ -94,6 +94,13 @@ main {
   max-height: 50%;
 }
 
+footer {
+  clear: both;
+  position: relative;
+  height: 10px;
+  margin-top: -200px;
+}
+
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
   .container {
