@@ -55,7 +55,7 @@ p {
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   margin-right: 30px;
   border-radius: 50px;
 }
@@ -88,5 +88,27 @@ main {
 }
 .responsive-img {
   max-width: 100%;
-  max-height: auto;
+  min-inline-size: 40%;
+  max-height: 50%;
+}
+
+/* widescreen displays */
+@media only screen and (min-width: 920px) {
+  .container {
+    /* some layout rules */
+  }
+}
+
+/* tablets */
+@media only screen and (max-width: 919px) {
+  .container {
+    /* some layout rules */
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 400px) {
+  .container {
+    /* some layout rules */
+  }
 }
