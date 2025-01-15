@@ -66,7 +66,7 @@ ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  padding-inline-start: 5px;
   unicode-bidi: isolate;
 }
 .footer {
@@ -74,4 +74,7 @@ ul {
   padding-top: 60px;
   bottom: 0px;
   width: 100%;
+}
+.navList {
+  list-style: none;
 }
