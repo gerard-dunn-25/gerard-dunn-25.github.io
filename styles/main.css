@@ -31,7 +31,7 @@ h1 {
 p {
   font-size: 23px;
 }
-#text-align-left {
+.text-align-left {
   text-align: left;
 }
 .container {
@@ -72,6 +72,7 @@ ul {
 }
 .footer {
   position: absolute;
+  text-align: left;
   padding-top: 60px;
   bottom: 0px;
   width: 100%;
