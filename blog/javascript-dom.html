@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,9 @@
       h3 {
         font-family: silkscreen;
       }
+      h4 {
+        font-family: silkscreen;
+      }
       ul {
         font-family: zain;
         font-size: 15pt;
@@ -28,9 +31,7 @@
         font-family: zain;
       }
     </style>
-    <title>JS Fundamentals</title>
-    <meta charset="UTF-8" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>JS Fundamentals</title>    
   </head>
 
   <body class="container">
@@ -86,40 +87,73 @@
       <main class="mainText">
         <h2>What is Javascript, how it operates & what tools are available to you to navigate or manipulate a webpage.</h2>
     <h3>24 January 2025</h3>
-      <p></p>
-      <h3><strong></strong></h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <h3><strong>◦ Javascript and it's relationship with HTML & CSS</strong></h3>
+        <p>So you want to make a website. Cool!! You've got the HTML structuring the contents on your page and the CSS making it look all nice. Also Cool!!</p>
+        <p>But without Javascript, that's about all it's going to be. A bunch of words on a webpage that look appealing. Javascript is the key ingredient that makes everything on your webpage work interactively.</p>
+        <p><strong>If we compare a webpage to a human body:</strong></p>
+      <h4><strong>HTML is the structure of the page and its contents //</strong></h4>
+        <ul>
+          <li>The body is comprised of a skeleton, muscles, etc.</li>        
+        </ul>
+      <h4><strong>CSS allows us to control the appearance of these contents//</strong></h4>
+        <ul>
+          <li>We can wear clothes, makeup, maybe we want to dye our hair</li>
+        </ul>
+      <h4><strong>Javascript is how objects on your page interact together//</strong></h4>
+        <ul>
+          <li>Javascript acts as the brain, telling our body what we want it to do. Walk here, turn on a light switch, make yourself lunch.</li>
+        </ul>
         <img
         class="responsive-img-blog"
-        src="../img/.png"
-        alt=""
+        src="../img/comparison+of+HTML+and+CSS+and+JS.png"
+        alt="HTML, CSS & Javascript"
         />
-        <h3><strong></strong></h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <h3><strong>Control Flow & Loops</strong></h3>
+        <p>Control flow is what dictates the order that statements are carried out when running a program. Both CSS and Javascript have a control flow that reads from top to bottom. The main difference with Javascript is that it can refer to other functions outside of the typical flow before continuing.</p>
+        <p>A loop is a useful way to run a single statement but have it apply to multiple objects. Rather than having to write out individual statements for each object, you can instead create a loop that applies the same statement to multiple objects in an array (we'll get to those in a bit) until it completes the loop.</p>
         <img
         class="responsive-img-blog"
-        src="../img/.png"
-        alt=""
+        src="../img/javascript-for-loop.svg"
+        alt="Example of a Loop"
         />
-      <h3><strong></strong></h3>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <h3>Sources:</h3>
-      <ul class="navList">
-        <li><a href="">Enter Source Here</a></li>
-        <li><a href="">Enter Source Here</a></li>
-        <li><a href="">Enter Source Here</a></li>
-      </ul>
+      <h3><strong>◦ The DOM (Document Object Model) & how to use it</strong></h3>
+        <p>The DOM operates in a tree like structure, showing how each part of a website (node) relates to the element before and after it</p>
+        <img
+        class="responsive-img-blog"
+        src="../img/navigate-the-dom.png"
+        alt="Example of webpage structure"
+        /> 
+        <p>The DOM allows us to navigate all of the components of a website as well as manipulate these components if we see the need to do so.</p>
+        <p>There is first the Window object, which is browser specific and allows you to display the contents of a webpage in a browsers tab. This allows you to do things such as enter the URL for a website, navigate the webpage using scroll bars & set things like bookmarks.</p>  
+        <p>The Document object refers to the contents of a webpage and this is where you can read what content is in the page or manipulate this content with the DOM. This is also where you can view and react to events.</p>  
+        <p>Javascript is the language used to run scripts that interface directly with the DOM allowing you to manipulate content, define and view the results of events & much more.</p>  
+      <h3><strong>◦ Arrays & Objects</strong></h3>
+        <p>It will be important to know the difference between an Array and an Object if you want to know how you can get information from them.</p>
+        <p>An Array is a list that contains any number of entries and each one has an indexed position that starts from 0.</p>
+        <img
+        class="responsive-img-blog"
+        src="../img/array-example.png"
+        alt="Example of getting information from an Array"
+        />
+        <ul>
+          <li>In this example we can see an array of 3 instruments.</li>
+          <li>We have pulled information from the array into the p section by referring to the id "rock-on".</li>
+          <li>We have specified that we are looking at item "2" which has returned "Drums" as this is the 3rd position in the index if we count from 0.</li>
+        </ul>
+        <p>An object is a singular item that can have multiple properties. These are known as keys and values and can be shown in the example below:</p>
+        <img
+        class="responsive-img-blog"
+        src="../img/object-example.png"
+        alt="Example of getting information from an Object"
+        />
+        <ul>
+          <li>In this example we can see an object with with 3 keys.</li>
+          <li>We have pulled information from the object into the p section by referring to the id "metal".</li>
+          <li>Using the object.key ("guitar.brand") dot notation format in our script, we have specified that we are looking at the "brand" key for this guitar which has returned the "Ibanez" value.</li>
+        </ul>
+      <h3><strong>◦ Functions & their purpose</strong></h3>
+        <p>Functions are a very useful way for creating a piece of code that you can reuse again and again whenever you need it, this is known as "calling the function". This can be something that happens as soon as the page is loaded, or you can assign a function to an interaction such as a button click for example.</p>
+        <p>Functions are the main method we will utilise to design an interaction and within this function we can assign multiple steps which will occur every time we call this function. This becomes important for limiting the number of times we need to write out these steps as once a function is created we can simply call the function each time we want to repeat the same steps.</p>
       </main>
       <div>
         <footer class="footer">
