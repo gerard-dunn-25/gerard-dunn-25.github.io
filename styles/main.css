@@ -7,6 +7,7 @@
   font-family: 'Zain', serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .zain-bold {
@@ -63,6 +64,16 @@ p {
 ul {
   display: block;
   list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 5px;
+  unicode-bidi: isolate;
+}
+ol {
+  display: block;
+  list-style-type: decimal;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
