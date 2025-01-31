@@ -114,6 +114,7 @@ main {
   max-width: 100%;
   min-inline-size: 40%;
   max-height: 50%;
+  object-fit: scale-down;
 }
 
 footer {
@@ -164,7 +165,7 @@ footer {
     font-size: 10vw;
   }
   .responsive-img {
-    max-width: 110%;
+    max-width: 100%;
     min-inline-size: 40%;
     max-height: 50%;
     padding-bottom: 100px;
