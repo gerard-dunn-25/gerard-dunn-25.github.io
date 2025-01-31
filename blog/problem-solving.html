@@ -92,11 +92,110 @@
         <h2>Problem Solving:</h2>
         <h3>31 January 2025</h3>
         <h3>◦ A time where I was blocked on a simple problem:</h3>
-        <p></p>
-        <p></p>
+        <p>
+          During the gradebook exercise, I was feeling pretty confident. I had
+          seen in Discord that other students had experienced issues with this
+          task, and right up until the averages section, I had been able to
+          figure out the solutions (with some help from google of course).
+        </p>
+        <p>
+          At this point, I had correctly solved the average function and only
+          had to utilise this function in order to apply it to an individual
+          students scores.
+        </p>
+        <p>For whatever reason, I had written my function as:</p>
+        <pre>
+              function getAverage(studentName) {
+                gradebook[studentName].testScores = average(scores)
+                console.log(gradebook)
+              }
+            </pre
+        >
+        <p>
+          At this point I had been working through too many of the kata without
+          a break, and this was causing me to sit and stare at this problem for
+          far too long. I had tried to console.log the result to see what it was
+          doing and I wasn't getting anywhere with it.
+        </p>
+        <p>
+          Instead of bashing my head against a wall, I chose to ask for help in
+          the discord and was immediately helped out by another student and a
+          facilitator. They pointed out two (now obvious) issues. First that I
+          was not returning any result and second that I wasn't calling the
+          function correctly.
+        </p>
+        <p>
+          with these tips in mind, I reorganised my code to return the average
+          function from the previous task, specifying the student whose scores I
+          wanted to average.
+        </p>
+        <pre>
+            function getAverage(studentName) {
+              return average(gradebook[studentName].testScores)
+            }
+        </pre>
+        <p>
+          Everything I needed to get the correct result was already there, I
+          just had it in the wrong order and was missing the key piece of the
+          puzzle which was to actually "return" something.
+        </p>
         <h3>◦ How I elegantly solved a problem:</h3>
-        <p></p>
-        <p></p>
+        <p>
+          One problem I solved elegantly (or at least in my own opinion), was
+          the capitalise task. We were asked to take each word in a string,
+          capitalise each word individually using a map, then return each word
+          back to a string.
+        </p>
+        <p>
+          Because I initially struggled with this task, I had a look at the
+          other tasks to see if I could solve them first and come back to this
+          one after. After finally solving the deBee task, I had learned a few
+          things that I was able to apply to this problem.
+        </p>
+        <p>
+          My first attempt to solve this problem ran into a couple of problems.
+          I was using the split, map, join builtin functions that I had become
+          more familiar with during the deBee task. By altering the split and
+          join parameters, I was only able to target the first character in the
+          entire string, or the entire first word of the string. At this stage
+          my code was:
+        </p>
+        <pre>
+            function capitalize(string) {
+              return (
+                string
+                  .split(' ')                  
+                  .map((char, index) => (index === 0 ? char.toUpperCase() : char))
+                  .join(' ')
+              )
+            }
+        </pre>
+        <p>
+          At this point I realised I was probably overcomplicating the process,
+          so I went to our trusty friend google to look at how to capitalise one
+          word to see if I could insert that into my function. Sure enough there
+          was a pretty straightforward method to apply this to one word, so I
+          amended my previous code to implement this new approach.
+        </p>
+        <pre>
+          function capitalize(string) {
+            return (
+              string
+                .split(' ')
+                .map((element) => element.charAt(0).toUpperCase() + element.slice(1))
+                // .map((char, index) => (index === 0 ? char.toUpperCase() : char))
+                .join(' ')
+            )
+          }
+        </pre>
+        <p>
+          This approach was successful which made me very happy, so happy in
+          fact, my wife heard me from the next room as I shouted about my
+          success! By selecting element, I was applying my function to each
+          entire word as it mapped through the array, rather than going into
+          unnecessarily deep detail and causing further issues. This approach
+          leaned into the KISS approach (Keep it simple stupid).
+        </p>
         <h3>
           ◦ Reflect on how confident you feel using each of these
           problem-solving techniques/processes:
@@ -127,7 +226,7 @@
           <li>
             <strong>Rubber ducky method: </strong><strong>★★★★</strong>
             <em>
-              This method for me was pretty useful, I would often explain
+              This method was pretty useful for me, I would often explain
               problems to my wife and while saying it out loud, the path forward
               would often come into focus. I can see this being a technique I
               will use a lot in future as well.
@@ -215,6 +314,31 @@
           ◦ Reflect on a time you were reluctant to ask for help. Consider what
           made you reluctant to do so. What might you try differently next time?
         </h3>
+        <p>
+          There have been many times I have been reluctant to ask for help,
+          largely because I viewed the problem I was having as something that
+          shouldn't be that difficult and I should be able to figure it out
+          myself. The problem being simple meant that asking for help was the
+          easy way out and that I should put a little more effort into problem
+          solving. I have seen other students asking for help with problems and
+          the way I interpreted that was often "Yes, that looks like a problem
+          worth asking for help over, whereas my problem seems simpler than
+          that, I should be able to solve it myself".
+        </p>
+        <p>
+          This is likely a detrimental mindset to be in as we are all learning
+          at the moment (even if we all have different levels of understanding
+          in these topics) and me asking for help is providing someone else an
+          opportunity to practice what they have learned by helping to teach me.
+        </p>
+        <p>
+          In future, I will likely ask for help more often when I get stuck as
+          the few times I have done it, I've been put on the right path a lot
+          sooner than I got there by trying to solve it myself. This is the
+          flipped classroom concept in action, and I now see the importance in
+          asking for help from more than just the facilitators as we will all
+          learn more by working together rather than individually.
+        </p>
       </main>
       <div>
         <footer class="footer">
