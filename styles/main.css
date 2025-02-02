@@ -173,7 +173,7 @@ main {
   max-width: 100%;
   min-inline-size: 40%;
   max-height: 50%;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .responsive-img-blog {
@@ -214,7 +214,7 @@ pre {
   .columnLayout {
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 44px;
     margin-right: -10px;
   }
   .mainText {
@@ -226,7 +226,7 @@ pre {
     background-color: #a5d6ab;
     display: block;
     padding-top: 15px;
-    padding-left: 35px;
+    padding-left: 15px;
     padding-right: 30px;
     padding-bottom: 0px;
     margin-right: 30px;
@@ -246,10 +246,11 @@ pre {
     font-size: 10vw;
   }
   .responsive-img {
-    max-width: 100%;
+    max-width: 110%;
     min-inline-size: 40%;
     max-height: 50%;
-    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-bottom: 40px;
   }
   table {
     font-size: 15px;
