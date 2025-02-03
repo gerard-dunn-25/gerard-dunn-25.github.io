@@ -58,16 +58,20 @@ td {
 
 @media only screen and (max-width: 750px) {
   h1 {
-    font-size: 40vw;
+    font-size: 10vw;
   }
 
   h2 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   td {
-    width: 15vw;
-    height: 15vw;
+    font-size: 15vw;
+  }
+
+  td {
+    width: 25vw;
+    height: 25vw;
     text-align: center;
     font-size: 300%;
     border: rgb(25, 122, 16) solid 3px;
