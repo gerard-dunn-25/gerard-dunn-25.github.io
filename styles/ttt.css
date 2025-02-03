@@ -1,0 +1,86 @@
+/* Game board and text not responsive yet*/
+
+body {
+  background-color: rgb(97, 172, 97);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+
+table {
+  margin-right: center;
+  margin-left: center;
+  margin: 0 auto;
+  background-color: #a5d6ab;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 5px solid rgb(25, 122, 16);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4vw;
+  background-color: #a5d6ab;
+  color: rgb(24, 85, 16);
+}
+
+td {
+  width: 8vw;
+  height: 8vw;
+  text-align: center;
+  font-size: 300%;
+  border: rgb(25, 122, 16) solid 3px;
+  color: rgb(223, 98, 15);
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  color: rgb(24, 85, 16);
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  border-radius: 8px;
+}
+
+td {
+  font-size: 5vw;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 40vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+
+  td {
+    width: 15vw;
+    height: 15vw;
+    text-align: center;
+    font-size: 300%;
+    border: rgb(25, 122, 16) solid 3px;
+    color: rgb(223, 98, 15);
+  }
+  .reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    border-radius: 8px;
+  }
+}
