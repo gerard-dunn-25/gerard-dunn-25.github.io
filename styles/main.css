@@ -95,6 +95,9 @@ body {
 h1 {
   font-size: 5vw;
 }
+h2 {
+  text-align: left;
+}
 p {
   font-size: 22px;
 }
@@ -210,6 +213,65 @@ pre {
   margin-left: 30px;
 }
 
+/* Fixed sidenav, full height */
+.dropdownNav {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5d6ab;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdownNav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 0px;
+  text-decoration: none;
+  font-family: 'Silkscreen';
+  font-size: 25px;
+  color: #046b00;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: crosshair;
+  outline: none;
+  align-items: center;
+}
+
+/* On mouse-over */
+.dropdownNav a:hover,
+.dropdown-btn:hover {
+  background-color: rgb(57, 168, 53);
+  color: #ffffff;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #a5d6ab;
+  padding-left: 0px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
 @media only screen and (max-width: 750px) {
   .container {
     margin-left: 10px;
@@ -305,5 +367,38 @@ pre {
   .respText {
     font-size: 4vw;
     font-family: 'Chakra Petch';
+  }
+  .dropdownNav {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: -4vw;
+    top: 0;
+    left: 0;
+    background-color: #a5d6ab;
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  .dropdownNav a,
+  .dropdown-btn {
+    padding: 6px 8px 6px 0px;
+    text-decoration: none;
+    font-family: 'Silkscreen';
+    font-size: 20px;
+    color: #046b00;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    cursor: crosshair;
+    outline: none;
+  }
+  .active {
+    background-color: green;
+    color: white;
   }
 }
