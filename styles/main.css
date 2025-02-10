@@ -161,6 +161,7 @@ ol {
 .navList {
   list-style: none;
   text-align: left;
+  font-size: 20px;
 }
 .mainText {
   width: 60%;
@@ -202,6 +203,11 @@ table {
 pre {
   resize: both;
   overflow: auto;
+}
+
+.mainList {
+  font-size: 18px;
+  margin-left: 30px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -286,5 +292,18 @@ pre {
     max-height: 50%;
     object-fit: scale-down;
     margin-block-end: 2em;
+  }
+  .mainList {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  .tableList {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  .respText {
+    font-size: 4vw;
+    font-family: 'Chakra Petch';
   }
 }
