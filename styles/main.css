@@ -97,9 +97,16 @@ h1 {
 }
 h2 {
   text-align: left;
+  font-size: 35px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
 }
 p {
-  font-size: 22px;
+  font-size: 30px;
 }
 .text-align-left {
   text-align: left;
@@ -141,6 +148,7 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 5px;
   unicode-bidi: isolate;
+  font-size: 25px;
 }
 ol {
   display: grid;
@@ -304,17 +312,23 @@ pre {
   h2 {
     text-align: center;
     margin-block-start: 0em;
+    font-size: 6vw;
   }
   h3 {
     text-align: center;
+    font-size: 5vw;
   }
   h4 {
     text-align: center;
+    font-size: 4vw;
   }
   h1 {
     padding-left: 11vw;
     align-content: center;
     font-size: 8vw;
+  }
+  p {
+    font-size: 5vw;
   }
   .responsive-img {
     max-width: 110%;
